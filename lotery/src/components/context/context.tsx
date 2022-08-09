@@ -1,4 +1,5 @@
 import React, { useContext, useState } from "react";
+import { InfosConcurso } from "../../types/InfoConcurso";
 
 export const Context = React.createContext<any>({});
 
@@ -15,6 +16,7 @@ export function ContextProvider(props: {
 }): any {
   const [nomeSorteio, setNomeSorteio] = useState<string>("megasena");
   const [concurso, setConcurso] = useState<number | undefined>();
+  const [resultado, setResultado] = useState<InfosConcurso>();
 
   return (
     <Context.Provider
@@ -23,6 +25,8 @@ export function ContextProvider(props: {
         setNomeSorteio,
         concurso,
         setConcurso,
+        resultado,
+        setResultado,
       }}
     >
       {props.children}

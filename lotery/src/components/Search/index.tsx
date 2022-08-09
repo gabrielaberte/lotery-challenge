@@ -3,25 +3,20 @@ import getLoteria from "../../services/get-lotery";
 import { InfosConcurso } from "../../types/InfoConcurso";
 import { useContexto } from "../context/context";
 
+export default function Search() {
+  const { concurso, setConcurso, nomeSorteio, setNomeSorteio, resultado, setResultado } = useContexto();
 
-export default function Search() { 
-    const [resultado, setResultado] = useState<InfosConcurso>();
-    const { concurso, setConcurso, nomeSorteio, setNomeSorteio } = useContexto();
+  useEffect(() => {
+    getLoteria(nomeSorteio, concurso).then((resultado) => {
+      console.log(resultado.data);
+      setResultado(resultado.data);
+    });
+  }, [nomeSorteio, concurso]);
 
-    useEffect(() => {
-        getLoteria(nomeSorteio, concurso).then((resultado) => {
-            console.log(resultado.data);
-            setResultado(resultado.data)
-        })
-    }, [nomeSorteio, concurso]);
-
-
-
-    return (
-        <>
-            <div>
-Resultado: {resultado && resultado.valor_final_concurso_acumulado}
-            </div>
-        </>
-)
+  return (
+    <>
+          <div>Resultado</div>
+          <div>Último Concurso: { resultado?.numero_concurso }</div>
+    </>
+  );
 }
