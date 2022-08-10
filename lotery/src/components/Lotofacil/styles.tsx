@@ -30,7 +30,16 @@ export const DivResultado = styled.div`
     margin-bottom: 20px;
     margin-left: 50px;
     margin-right: 50px;
+    p{font-size: 15px;
+    margin: 10px;
+    height: 30px;
+    width: 30px;
+    padding: 3px;
+    background-color: purple;
+    border-radius: 100%;
+    color: white;}
   }
+  
 `;
 
 export const DivPremiacao = styled.div`

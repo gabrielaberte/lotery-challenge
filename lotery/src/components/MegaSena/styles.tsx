@@ -18,34 +18,63 @@ export const DivResultado = styled.div`
     color: white;
   }
 
+  @media (max-width: 800px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+    p{font-size: 15px;
+    margin: 10px;
+    height: 30px;
+    width: 30px;
+    padding: 3px;
+    background-color: green;
+    border-radius: 100%;
+    color: white;}
+  }
 `;
 
 export const DivPremiacao = styled.div`
-display: flex;
-justify-content: space-evenly;
-margin-bottom: 20px;
-align-items: center;
-align-self: center;
-
-div{
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
   align-items: center;
-  height: 300px;
-  width: 300px;
-  background-color: #D7DADA;
-  border-radius: 10px;
-}
+  align-self: center;
 
-p{
-  margin-bottom: 2px;
-  margin-top: 10px;
-  font-size: 15px;
-  font-weight: 500;
-}
+  div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    background-color: #d7dada;
+    border-radius: 10px;
+  }
 
-span{
-margin-bottom: 5px;
-}
-`
+  p {
+    margin-bottom: 2px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  span {
+    margin-bottom: 5px;
+  }
+
+    @media (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+
+    div {
+      margin-bottom: 50px;
+      height: fit-content;
+    }
+  }
+`;
