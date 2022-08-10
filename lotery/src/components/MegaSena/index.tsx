@@ -34,7 +34,7 @@ export default function MegaSena() {
 
       <DivResultado>
         {resultado.dezenas.map((e: string) => (
-          <p>{e}</p>
+          <p key={e}>{e}</p>
         ))}
       </DivResultado>
       <div>

@@ -68,7 +68,12 @@ export default function Search(): JSX.Element {
             nomeloteria?.map((e: any) => (
               <DivContainer key={e.sorteio}>
                 <img src={e.image}></img>
-                <a key={e.nome} onClick={() => {}}>
+                <a
+                  key={e.nome}
+                  onClick={() => {
+                    setNomeSorteio(e.sorteio);
+                  }}
+                >
                   <h3 style={{ marginTop: "10px" }}>{e.nome}</h3>
                   <span>Descricao: {e.descricao}</span>
                 </a>
