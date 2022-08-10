@@ -3,7 +3,6 @@ import getLoteria from "../../services/get-lotery";
 import { useContexto } from "../context/context";
 import Slider from "react-slick";
 import { DivContainer } from "./styles";
-import { useNavigate } from "react-router-dom";
 import { nomeloteria } from "../utils/concursos";
 import "./index.css";
 
@@ -15,11 +14,9 @@ export default function Search(): JSX.Element {
     setNomeSorteio,
     setResultado,
   } = useContexto();
-  let navigate = useNavigate();
 
   useEffect(() => {
     getLoteria(nomeSorteio, concurso).then((resultado) => {
-      console.log(resultado.data);
       setResultado(resultado.data);
     });
   }, [nomeSorteio, concurso]);
@@ -57,7 +54,6 @@ export default function Search(): JSX.Element {
       },
     ],
   };
-  const concursoId = window.location.pathname.replace("/", "");
 
   return (
     <>
