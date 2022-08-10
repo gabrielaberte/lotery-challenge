@@ -3,55 +3,13 @@ import { Dropdown, Layout, Menu, Space, Input } from "antd";
 import { LoginOutlined } from "@ant-design/icons";
 import { DivMenu } from "./styles";
 import { useContexto } from "../context/context";
+import { nomeloteria } from "../utils/concursos";
+
 
 const { Header } = Layout;
 
 export default function NavBar() {
   const { concurso, setConcurso, nomeSorteio, setNomeSorteio } = useContexto();
-
-  const nomeloteria = [
-    {
-      sorteio: "megasena",
-      nome: "Mega Sena",
-    },
-    {
-      sorteio: "quina",
-      nome: "Quina",
-    },
-    {
-      sorteio: "lotofacil",
-      nome: "Lotofácil",
-    },
-    {
-      sorteio: "lotomania",
-      nome: "Lotomania",
-    },
-    {
-      sorteio: "timemania",
-      nome: "Time Mania",
-    },{
-      sorteio: "duplasena",
-      nome: "Dupla Sena",
-    },
-{
-      sorteio: "diadesorte",
-      nome: "Dia de Sorte",
-    },{
-      sorteio: "federal",
-      nome: "Federal",
-      },
-    {
-      sorteio: "loteca",
-      nome: "Loteca",
-    },{
-      sorteio: "supersete",
-      nome: "Super Sete",
-      },
-    {
-      sorteio: "maismilionaria",
-      nome: "Milionária",
-    },
-  ];
 
   const items = [];
 

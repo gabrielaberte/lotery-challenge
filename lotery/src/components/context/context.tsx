@@ -17,6 +17,7 @@ export function ContextProvider(props: {
   const [nomeSorteio, setNomeSorteio] = useState<string>("megasena");
   const [concurso, setConcurso] = useState<number | undefined>();
   const [resultado, setResultado] = useState<InfosConcurso>();
+ 
 
   return (
     <Context.Provider
