@@ -1,6 +1,6 @@
 import React from "react";
 import { useContexto } from "../context/context";
-import { DivPremiacao, DivResultado } from "./styles";
+import { DivGanhadores, DivPremiacao, DivResultado } from "./styles";
 import HeaderResultado from "../HeaderResultado";
 
 export default function Lotofacil() {
@@ -127,15 +127,15 @@ export default function Lotofacil() {
               currency: "BRL",
             })}
           </span>
+          {ganhadores.length > 0 && <p>Cidade dos Ganhadores:</p>}
           {ganhadores.length > 0 && (
-            <>
-              <p>Cidade dos Ganhadores:</p>
+            <DivGanhadores>
               {ganhadores.map((e: any) => (
-                <>
-                  <span>{e.cidade}</span>
-                </>
+                <span>
+                   {e.cidade}
+                </span>
               ))}{" "}
-            </>
+            </DivGanhadores>
           )}
         </div>
       </DivPremiacao>
