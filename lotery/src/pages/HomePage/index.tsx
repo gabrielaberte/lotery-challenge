@@ -1,5 +1,6 @@
 import React from "react";
 import { useContexto } from "../../components/context/context";
+import DiaDeSorte from "../../components/DiaDeSorte";
 import Lotofacil from "../../components/Lotofacil";
 import Lotomania from "../../components/Lotomania";
 import MegaSena from "../../components/MegaSena";
@@ -25,7 +26,7 @@ export default function HomePage() {
     } else if (resultado?.nome == "QUINA") {
       return <>osdasdasds777777adas</>;
     } else if (resultado?.nome == "DIA DE SORTE") {
-      return <>osdasdasd888888888sadas</>;
+      return <DiaDeSorte />;
     } else if (resultado?.nome == "FEDERAL") {
       return <>osdasdasd99999999sadas</>;
     } else if (resultado?.nome == "LOTECA") {
