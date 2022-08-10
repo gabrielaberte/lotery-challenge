@@ -1,5 +1,6 @@
 import React from "react";
 import { useContexto } from "../../components/context/context";
+import Lotomania from "../../components/Lotomania";
 import MegaSena from "../../components/MegaSena";
 import NavBar from "../../components/NavBar";
 import Quina from "../../components/Quina";
@@ -15,7 +16,7 @@ export default function HomePage() {
     } else if (resultado?.nome == "LOTOFÁCIL") {
       return <>osdasdasdsadas</>;
     } else if (resultado?.nome == "LOTOMANIA") {
-      return <>osdasdasds444444adas</>;
+      return <Lotomania/>;
     } else if (resultado?.nome == "TIMEMANIA") {
       return <>osdasdas555555555dsadas</>;
     } else if (resultado?.nome == "DUPLASENA") {
