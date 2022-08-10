@@ -9,7 +9,7 @@ import { nomeloteria } from "../utils/concursos";
 const { Header } = Layout;
 
 export default function NavBar() {
-  const { concurso, setConcurso, nomeSorteio, setNomeSorteio } = useContexto();
+  const {setConcurso, setNomeSorteio } = useContexto();
 
   const items = [];
 
@@ -21,6 +21,7 @@ export default function NavBar() {
         <a
           onClick={() => {
             setNomeSorteio(elemento.sorteio);
+            setConcurso();
           }}
         >
           {elemento.nome}

@@ -13,7 +13,6 @@ export default function Search(): JSX.Element {
     setConcurso,
     nomeSorteio,
     setNomeSorteio,
-    resultado,
     setResultado,
   } = useContexto();
   let navigate = useNavigate();
@@ -72,6 +71,7 @@ export default function Search(): JSX.Element {
                   key={e.nome}
                   onClick={() => {
                     setNomeSorteio(e.sorteio);
+                    setConcurso();
                   }}
                 >
                   <h3 style={{ marginTop: "10px" }}>{e.nome}</h3>

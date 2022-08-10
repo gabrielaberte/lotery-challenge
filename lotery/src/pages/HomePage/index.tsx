@@ -7,6 +7,7 @@ import MegaSena from "../../components/MegaSena";
 import NavBar from "../../components/NavBar";
 import Quina from "../../components/Quina";
 import Search from "../../components/Search";
+import Timemania from "../../components/Timemania";
 
 export default function HomePage() {
   function SwitchResultado() {
@@ -20,21 +21,9 @@ export default function HomePage() {
     } else if (resultado?.nome == "LOTOMANIA") {
       return <Lotomania/>;
     } else if (resultado?.nome == "TIMEMANIA") {
-      return <>osdasdas555555555dsadas</>;
-    } else if (resultado?.nome == "DUPLASENA") {
-      return <>osdasdasd6666666sadas</>;
-    } else if (resultado?.nome == "QUINA") {
-      return <>osdasdasds777777adas</>;
+      return <Timemania />;
     } else if (resultado?.nome == "DIA DE SORTE") {
       return <DiaDeSorte />;
-    } else if (resultado?.nome == "FEDERAL") {
-      return <>osdasdasd99999999sadas</>;
-    } else if (resultado?.nome == "LOTECA") {
-      return <>osdasdasdsadas</>;
-    } else if (resultado?.nome == "SUPER SETE") {
-      return <>osdasdasdsadas</>;
-    } else if (resultado?.nome == "+MILIONÁRIA") {
-      return <>osdasdasds00000000adas</>;
     }
 
     return <></>;

@@ -44,15 +44,6 @@ export const nomeloteria = [
     nomeDisplay: "TIMEMANIA",
   },
   {
-    sorteio: "duplasena",
-    nome: "Dupla Sena",
-    image:
-      "https://loterias.caixa.gov.br/PublishingImages/Dupla%20Sena/Dupla-Sena.jpg",
-    descricao:
-      "Na Dupla Sena, você tem o dobro de chances de ganhar. Com o mesmo bilhete, você participa de dois sorteios por concurso e ganha se acertar 3, 4, 5 ou 6 números.",
-    nomeDisplay: "DUPLASENA",
-  },
-  {
     sorteio: "diadesorte",
     nome: "Dia de Sorte",
     image:
@@ -61,38 +52,5 @@ export const nomeloteria = [
       "O Dia de Sorte é a loteria em que você aposta seus números da sorte. Escolha de 7 a 15 números dentre os 31 disponíveis e mais 1 “Mês de Sorte”. São sorteados sete números e um “Mês de Sorte” por concurso.",
     nomeDisplay: "DIA DE SORTE",
   },
-  {
-    sorteio: "federal",
-    nome: "Federal",
-    image: "https://loterias.caixa.gov.br/PublishingImages/Federal/Federal.jpg",
-    descricao:
-      "Na Federal é muito mais fácil ganhar. Você tem diversas chances de acertar o prêmio principal, e também pode ganhar se acertar uma das outras opções de aposta.",
-    nomeDisplay: "FEDERAL",
-  },
-  {
-    sorteio: "loteca",
-    nome: "Loteca",
-    image: "https://loterias.caixa.gov.br/PublishingImages/Loteca/Loteca.png",
-    descricao:
-      "A Loteca é a loteria ideal para você que entende de futebol e adora dar palpites sobre os resultados das partidas. Para apostar, você deve marcar o seu palpite para cada um dos 14 jogos do concurso.",
-    nomeDisplay: "LOTECA",
-  },
-  {
-    sorteio: "supersete",
-    nome: "Super Sete",
-    image:
-      "https://loterias.caixa.gov.br/PublishingImages/Super%20Sete/Super-Sete.png",
-    descricao:
-      "O Super Sete tem o mote “colunas”, em que o apostador marca, no mínimo, 1 número em cada uma das 7 colunas e no máximo 3 por coluna. Você ganha prêmios se acertar de três a sete colunas, independentemente da ordem.",
-    nomeDisplay: "SUPER SETE",
-  },
-  {
-    sorteio: "maismilionaria",
-    nome: "Milionária",
-    image:
-      "https://loterias.caixa.gov.br/PublishingImages/Mais%20Milionaria/Mais_Milionaria.png",
-    descricao:
-      "A + Milionária é a mais nova loteria da CAIXA. São dez faixas de premiação e prêmio mínimo garantido de R$ 10 milhões a cada sorteio.",
-    nomeDisplay: "+MILIONÁRIA",
-  },
+  
 ];
