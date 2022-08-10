@@ -7,14 +7,6 @@ import { useNavigate } from "react-router-dom";
 import { nomeloteria } from "../utils/concursos";
 import "./index.css";
 
-interface Geral {
-  sorteio: string;
-  nome: string;
-  image: string;
-  descricao: string;
-}
-;
-
 export default function Search(): JSX.Element {
   const {
     concurso,
@@ -68,32 +60,19 @@ export default function Search(): JSX.Element {
   };
   const concursoId = window.location.pathname.replace("/", "");
 
-  function SamplePrevArrow(e: Geral) {
-    if (e?.sorteio != concursoId) {
-      return (
-        <>
-          <DivContainer key={e.nome}>
-            <img src={e.image}></img>
-            <a key={e.nome} onClick={() => {}}>
-              <h3 style={{ marginTop: "10px" }}>{e.nome}</h3>
-                      <span>Descricao: {e.descricao}</span>
-            </a>
-          </DivContainer>
-        </>
-      );
-    } else 
-      return (
-          <></>
-      )
-  }
-
   return (
     <>
       <div style={{ marginLeft: "50px", marginRight: "50px" }}>
         <Slider {...settings}>
           {nomeloteria &&
             nomeloteria?.map((e: any) => (
-                <SamplePrevArrow sorteio={e.sorteio} nome={e.nome} image={e.image} descricao={e.descricao}  />
+              <DivContainer key={e.sorteio}>
+                <img src={e.image}></img>
+                <a key={e.nome} onClick={() => {}}>
+                  <h3 style={{ marginTop: "10px" }}>{e.nome}</h3>
+                  <span>Descricao: {e.descricao}</span>
+                </a>
+              </DivContainer>
             ))}
         </Slider>
       </div>
