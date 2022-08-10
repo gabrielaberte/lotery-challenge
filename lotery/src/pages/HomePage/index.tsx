@@ -2,6 +2,7 @@ import React from "react";
 import { useContexto } from "../../components/context/context";
 import MegaSena from "../../components/MegaSena";
 import NavBar from "../../components/NavBar";
+import Quina from "../../components/Quina";
 import Search from "../../components/Search";
 
 export default function HomePage() {
@@ -10,7 +11,7 @@ export default function HomePage() {
     if (resultado?.nome == "MEGA-SENA") {
       return <MegaSena />;
     } else if (resultado?.nome == "QUINA") {
-      return <>osdasdasdsadas</>;
+      return <Quina/>;
     } else if (resultado?.nome == "LOTOFÁCIL") {
       return <>osdasdasdsadas</>;
     } else if (resultado?.nome == "LOTOMANIA") {
