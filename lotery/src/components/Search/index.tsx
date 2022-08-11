@@ -71,7 +71,7 @@ export default function Search(): JSX.Element {
                   }}
                 >
                   <h3 style={{ marginTop: "10px" }}>{e.nome}</h3>
-                  <span>Descricao: {e.descricao}</span>
+                  <span>{e.descricao}</span>
                 </a>
               </DivContainer>
             ))}
